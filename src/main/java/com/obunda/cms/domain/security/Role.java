@@ -4,13 +4,10 @@ import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
-import javax.persistence.Table;
-
-import org.hibernate.envers.Audited;
-import org.hibernate.envers.RelationTargetAuditMode;
-import org.hibernate.validator.constraints.UniqueElements;
 
 import com.obunda.cms.domain.BaseEntity;
 
@@ -22,14 +19,11 @@ import lombok.Setter;
 public class Role extends BaseEntity{
 	// https://www.callicoder.com/hibernate-spring-boot-jpa-many-to-many-mapping-example/
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 8454595129644237788L;
 
-	@Column
-	@UniqueElements
-    private String name;
+	@Enumerated(EnumType.STRING)
+	@Column(length = 20)
+    private ERole name;
 
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "roles")
     private Set<User> users;
