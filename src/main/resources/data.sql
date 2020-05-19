@@ -91,36 +91,36 @@ VALUES
 -- uuid_generate_v4()
 	(
 		'a74ca58b-63e7-4c6d-b5f7-418e7d5dc8e9', 
-		NULL,
+		'b88fc75c-cfb8-499b-a9eb-8075a755bedb',
 		NOW(),
-		NULL,
+		'b88fc75c-cfb8-499b-a9eb-8075a755bedb',
 		NOW(),
 		0,
 		'ADMIN'
 	),
 	(
 		'2f94aea1-0172-4e8f-90a7-286f712a4ae0', 
-		NULL,
+		'b88fc75c-cfb8-499b-a9eb-8075a755bedb',
 		NOW(),
-		NULL,
+		'b88fc75c-cfb8-499b-a9eb-8075a755bedb',
 		NOW(),
 		0,
 		'USER'
 	),
 	(
 		'f0c395c1-ce30-4152-aeba-95d5a4f05764', 
-		NULL,
+		'b88fc75c-cfb8-499b-a9eb-8075a755bedb',
 		NOW(),
-		NULL,
+		'b88fc75c-cfb8-499b-a9eb-8075a755bedb',
 		NOW(),
 		0,
 		'MODERATOR'
 	),
 	(
 		'61c624f8-d315-4c5e-8c06-5ea524d90581', 
-		NULL,
+		'b88fc75c-cfb8-499b-a9eb-8075a755bedb',
 		NOW(),
-		NULL,
+		'b88fc75c-cfb8-499b-a9eb-8075a755bedb',
 		NOW(),
 		0,
 		'GUEST'
